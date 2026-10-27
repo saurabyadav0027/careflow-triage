@@ -23,10 +23,10 @@
 
 ## 🎥 Demo Video
 
-[![Demo Video Walkthrough](https://img.shields.io/badge/▶%20Watch%20Demo%20Video-CareFlow%20Walkthrough-red?style=for-the-badge&logo=youtube)](https://drive.google.com)
+[![Demo Video Walkthrough](https://img.shields.io/badge/▶%20Watch%20Demo%20Video-CareFlow%20Walkthrough-red?style=for-the-badge&logo=google-drive)](https://drive.google.com/file/d/1I4dAGD1g-tJhufX0DSBrQobEZ3iATXyh/view?usp=sharing)
 
-> 📹 **Demo Video Link:** **[Click here to watch the full 3–5 minute video walkthrough](https://drive.google.com)**  
-> *(If hosting on Google Drive, ensure link permissions are set to "Anyone with the link can view")*
+> 📹 **Official Walkthrough:** **[Watch the CareFlow 3–5 Minute Clinical Triage Demo Video](https://drive.google.com/file/d/1I4dAGD1g-tJhufX0DSBrQobEZ3iATXyh/view?usp=sharing)**  
+> *(Demonstrates real-time algorithmic triage scoring, responder dispatch, guarded RCA resolution, and SBAR shift-handover generation)*
 
 ---
 
