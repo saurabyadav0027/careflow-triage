@@ -1,13 +1,32 @@
 # CareFlow — Clinical Incident Triage & Emergency Response Coordinator
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-careflow--triage.vercel.app-blue?style=for-the-badge&logo=vercel)](https://careflow-triage.vercel.app)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-saurabyadav0027%2Fcareflow--triage-black?style=for-the-badge&logo=github)](https://github.com/saurabyadav0027/careflow-triage)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](#)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue)](#)
 [![React](https://img.shields.io/badge/React-18.3-61dafb)](#)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38bdf8)](#)
 [![Tests](https://img.shields.io/badge/tests-6%20passed-success)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-slate)](#)
 
 > An institutional clinical incident triage, emergency responder dispatch, and SBAR shift-handover coordination platform designed for healthcare facilities and emergency departments.
+
+---
+
+## 📌 Project Quick Links
+
+- 🌐 **Live Deployed Application:** **[https://careflow-triage.vercel.app](https://careflow-triage.vercel.app)**
+- 💻 **Source Code Repository:** **[https://github.com/saurabyadav0027/careflow-triage](https://github.com/saurabyadav0027/careflow-triage)**
+- 👨‍💻 **Author / Student:** Saurabh Yadav (`saurabkumar.25bcs10244@sst.scaler.com`)
+- 📋 **Official Submission Guidelines Compliance:** 100% Aligned (End-Term Software Project)
+
+---
+
+## 🎥 Demo Video
+
+[![Demo Video Walkthrough](https://img.shields.io/badge/▶%20Watch%20Demo%20Video-CareFlow%20Walkthrough-red?style=for-the-badge&logo=youtube)](https://drive.google.com)
+
+> 📹 **Demo Video Link:** **[Click here to watch the full 3–5 minute video walkthrough](https://drive.google.com)**  
+> *(If hosting on Google Drive, ensure link permissions are set to "Anyone with the link can view")*
 
 ---
 
@@ -87,6 +106,7 @@ CareFlow introduces a resilient, workflow-driven operational platform:
 - **Icons**: Lucide React
 - **Persistence Layer**: LocalStorage Engine with typed domain schema, seed dataset fallback, and JSON export/import
 - **Automated Testing**: Node.js Native Test Runner (`node --test`) verifying triage calculations and state machine guards
+- **Deployment Platform**: Vercel (Production CI/CD)
 
 ---
 
@@ -100,7 +120,7 @@ src/
 │   └── index.ts                 # Domain models: Incident, Responder, TriageAssessment, AuditLog, ShiftHandover
 ├── services/
 │   ├── triageEngine.ts          # Algorithmic triage index computation & SLA calculator
-│   ├── stateMachine.ts          # Guarded status transitions & immutable audit trail generator
+│   ├── stateMachine.ts          # Guarded status transitions & immutable audit logging
 │   ├── handoverService.ts       # SBAR clinical report compiler
 │   └── storage.ts               # LocalStorage persistence, seed initialization, JSON import/export
 ├── data/
@@ -147,8 +167,9 @@ src/
 
 ### Installation & Run
 
-1. **Clone or navigate to the repository directory**:
+1. **Clone the repository**:
    ```bash
+   git clone https://github.com/saurabyadav0027/careflow-triage.git
    cd careflow-triage
    ```
 
@@ -194,26 +215,11 @@ VITE_APP_FACILITY_NAME="St. Jude Regional Medical Center"
 
 ---
 
-## 9. Deployment Guide
+## 9. Deployment Details
 
-CareFlow builds into pure static assets (`dist/`), making it deployable on any modern hosting provider in seconds:
-
-### Deploy to Vercel (Recommended)
-1. Push your repository to GitHub.
-2. Go to [Vercel](https://vercel.com) $\rightarrow$ **Add New Project** $\rightarrow$ Import your GitHub repository.
-3. Framework Preset: **Vite**.
-4. Click **Deploy**. Vercel will run `npm run build` and output a live public URL.
-
-### Deploy to Netlify
-1. Connect your repository to [Netlify](https://netlify.com).
-2. Build command: `npm run build`
-3. Publish directory: `dist`
-4. Click **Deploy**.
-
-### Deploy to GitHub Pages
-1. In `vite.config.ts`, set `base: './'`.
-2. Run `npm run build`.
-3. Deploy the `dist/` folder to GitHub Pages via Git branch or GitHub Actions.
+- **Production Deployment URL:** [https://careflow-triage.vercel.app](https://careflow-triage.vercel.app)
+- **Hosting Provider:** Vercel
+- **Continuous Deployment:** Triggered automatically upon git push to `main` branch.
 
 ---
 
